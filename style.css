@@ -1,0 +1,161 @@
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 250px;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.slideshow-container1 {
+  max-width: 250px;
+  position: absolute; 
+  margin-left: 40%;
+  margin-top: 9%;
+}
+.slideshow-container2 {
+  max-width: 250px;
+  position: absolute; 
+  margin-left: 70%;
+  margin-top: 9%;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.dot1 {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade1 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.dot2 {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade2 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-size: 22px;
+    
+}
+.copyright{
+	color: #000000;
+	font-size: 15px;
+	position: absolute;
+	left: 50%;
+    bottom: 0;
+	transform: translateX(-50%);
+    text-align: center;
+}
+
+
+@media(max-width:750px){
+
+    .slideshow-container {
+        max-width: 250px;
+        position: absolute;
+        margin-left: 25%;
+        margin-top: 10%;
+      }
+      .slideshow-container1 {
+        max-width: 250px;
+        position: absolute; 
+        margin-left: 25%;
+        margin-top: 55%;
+      }
+      .slideshow-container2 {
+        max-width: 250px;
+        position: absolute; 
+        margin-left: 25%;
+        margin-top: 110%;
+      }
+      .copyright{
+        color: #000000;
+        font-size: 15px;
+        position: absolute;
+        left: 50%;
+        bottom: -30%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}

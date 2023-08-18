@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<nav>
+    <a href="https://shahul-shane.github.io/">Shahul Shane</a>
+</nav>
+<a href="https://shahul-shane.github.io/stopnjoy" target="_blank" class="stopnjoy">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="./StopNJoy.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="./StopNJoy (1).png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="./StopNJoy (2).png" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="./StopNJoy (3).png" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="./StopNJoy (4).png" style="width:100%">
+</div>
+<h3 style="color: black; text-align: center;">Stop N Joy</h3>
+</div>
+
+</a>
+
+<br>
+<a href="https://pixcelinteriors.com/" target="_blank" class="stopnjoy">
+<div class="slideshow-container1">
+
+<div class="mySlides1 fade1">
+  <img src="./Pixcel (1).png" style="width:100%">
+</div>
+
+<div class="mySlides1 fade1">
+  <img src="./Pixcel (2).png" style="width:100%">
+</div>
+
+<div class="mySlides1 fade1">
+  <img src="./Pixcel (3).png" style="width:100%">
+</div>
+<div class="mySlides1 fade1">
+  <img src="./Pixcel (4).png" style="width:100%">
+</div>
+<div class="mySlides1 fade1">
+  <img src="./Pixcel (5).png" style="width:100%">
+</div>
+<h3 style="color: black; text-align: center;">Pixcel Interiors</h3>
+</div>
+
+</a>
+
+<a href="https://conesanddreams.in/" target="_blank" class="stopnjoy">
+    <div class="slideshow-container2">
+    
+    <div class="mySlides2 fade2">
+      <img src="./Cones (1).png" style="width:100%">
+    </div>
+    
+    <div class="mySlides2 fade2">
+      <img src="./Cones (2).png" style="width:100%">
+    </div>
+    
+    <div class="mySlides2 fade2">
+      <img src="./Cones (3).png" style="width:100%">
+    </div>
+    <div class="mySlides2 fade2">
+      <img src="./Cones (4).png" style="width:100%">
+    </div>
+    <div class="mySlides2 fade2">
+      <img src="./Cones (5).png" style="width:100%">
+    </div>
+    <h3 style="color: black; text-align: center;">Cones and Dreams</h3>
+    </div>
+    
+    </a>
+<div style="text-align:center; display:none;" >
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+    <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  
+</div>
+<div style="text-align:center; display:none;" >
+    <span class="dot1"></span> 
+    <span class="dot1"></span> 
+    <span class="dot1"></span> 
+      <span class="dot1"></span> 
+    <span class="dot1"></span> 
+    <span class="dot1"></span>
+    
+  </div>
+  <div style="text-align:center; display:none;" >
+    <span class="dot2"></span> 
+    <span class="dot2"></span> 
+    <span class="dot2"></span> 
+      <span class="dot2"></span> 
+    <span class="dot2"></span> 
+    <span class="dot2"></span>
+    
+  </div>
+
+
+<script>
+let slideIndex = 0;
+let slideIndex1 = 0;
+let slideIndex2 = 0;
+showSlides();
+showSlides1();
+showSlides2();
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+function showSlides1() {
+  let i;
+  let slides1 = document.getElementsByClassName("mySlides1");
+  let dots1 = document.getElementsByClassName("dot1");
+  for (i = 0; i < slides1.length; i++) {
+    slides1[i].style.display = "none";  
+  }
+  slideIndex1++;
+  if (slideIndex1 > slides1.length) {slideIndex1 = 1}    
+  for (i = 0; i < dots1.length; i++) {
+    dots1[i].className = dots1[i].className.replace(" active", "");
+  }
+  slides1[slideIndex1-1].style.display = "block";  
+  dots1[slideIndex1-1].className += " active";
+  setTimeout(showSlides1, 2000); // Change image every 2 seconds
+}
+function showSlides2() {
+  let i;
+  let slides2 = document.getElementsByClassName("mySlides2");
+  let dots2 = document.getElementsByClassName("dot2");
+  for (i = 0; i < slides2.length; i++) {
+    slides2[i].style.display = "none";  
+  }
+  slideIndex2++;
+  if (slideIndex2 > slides2.length) {slideIndex2 = 1}    
+  for (i = 0; i < dots2.length; i++) {
+    dots2[i].className = dots2[i].className.replace(" active", "");
+  }
+  slides2[slideIndex2-1].style.display = "block";  
+  dots2[slideIndex2-1].className += " active";
+  setTimeout(showSlides2, 2000); // Change image every 2 seconds
+}
+</script>
+<footer>
+    <p class="copyright">Copyright © 2023 by Shahul Shane
+    </p>
+  </footer>
+</body>
+</html> 
